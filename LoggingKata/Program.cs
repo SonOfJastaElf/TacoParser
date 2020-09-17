@@ -58,9 +58,9 @@ namespace LoggingKata
 
                 }
             }
-            Console.WriteLine($"{locA.Name} and {locB.Name} are the Taco Bell locations that are the farthest apart.");
+            logger.LogInfo($"{locA.Name} and {locB.Name} are the Taco Bell locations that are the farthest apart.");
             var miles = dist / 1609.344;
-            Console.WriteLine($"The distance between them is {miles} miles");
+            logger.LogInfo($"The distance between them is {miles} miles");
         }
     }
 }
